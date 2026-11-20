@@ -1797,3 +1797,60 @@ body.light-mode .hero-actions .button-ghost:hover {
     box-shadow: 0 5px 18px rgba(112, 80, 201, 0.25);
 }
 
+
+/* =====================================
+   MOBILE FIX - PROJECT CARD
+===================================== */
+
+@media (max-width: 620px) {
+
+    .project-featured {
+        display: block !important;
+        grid-column: auto !important;
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+    }
+
+    .project-featured .project-art {
+        width: 100%;
+        min-height: 230px;
+    }
+
+    .project-featured .project-info {
+        display: block !important;
+        position: relative !important;
+        width: 100%;
+        height: auto !important;
+        padding: 24px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
+
+    .project-featured .project-info h3 {
+        display: block !important;
+        color: #ffffff;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .project-featured .project-info p {
+        display: block !important;
+        color: #b8b9c9;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .project-featured .project-tags {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .project-featured .project-link {
+        display: inline-block !important;
+        margin-top: 12px;
+    }
+}
+
